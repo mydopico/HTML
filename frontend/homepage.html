@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home page</title>
+<link rel="stylesheet"
+ href="style.css" /> 
+<!-- HTML shiv JavaScript to get styling of new HTML elements in internet explorer prior version 9-->
+<!--[if lt IE 9]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type='text/css'>
+<!--
+-->
+</style>
+</head> <!-- end head  -->
+
+
+<body>
+<div class='page'>
+
+<!--   ========= START HEADER =========  -->
+<header>
+  <div class='header'>
+
+    <div class='logo'>
+         <img src="DNA.png" width="98" height="114" alt="text"/>
+    </div> <!-- end logo div  -->
+
+    <div class='title'>
+         <h1><small>CHROMOSOME 3</small></h1>
+    </div> <!-- end title div  -->
+
+
+
+   <div class='navbox'> <!-- navbar and search box    -->
+   <!-- ====== Search box ====== -->
+       <div class='searchbox'>
+           <form action='http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/dm002/searchYoli.pl'  method="post">
+
+              <select name="searchBy">
+                 <option  value="gid">Gene Id</option>
+                 <option  value="protein">Protein</option>
+                 <option  value="accession">Accession Number</option>
+                 <option  value="chromosome_loc">Chromosome Location</option>
+             </select>
+
+            <input name="input" type="text"/>
+            <input type="submit" value="search"/>
+          </form>
+     </div> <!-- ==== end searchbox div ====== -->
+
+     <!-- =====  Navigation bar ===== -->
+     <div class='navbar'>
+
+        <ul>
+          <li class='active'><a href='http://student.cryst.bbk.ac.uk/~dm002/homepage.html'>Home</a></li>
+         <li><a href='http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/pm001/summary2.pl'>Summary</a></li>
+         <li><a href='http://student.cryst.bbk.ac.uk/~dm002/detail.html'>Detail</a></li>
+       </ul>
+
+     </div>   <!-- ==== end navbar div ==== -->
+   </div>   <!-- end navbox div  -->
+
+  </div> <!-- end header div  -->
+</header> <!-- end header  -->
+
+
+<!--   ====== START CONTENT ======  -->
+<div class='page-container'>
+
+<div class='content'>
+   <div class= 'main-content'>
+
+      <section class='info1'>
+         <h2>About Chromosome 3</h2>
+             <P>Chromosome 3 is one of the largest human chromosomes with almost 200 million pairs that represents almost 7 percent of the DNA in cells. Chromosome 3 also contains between 1,100 and 1,500 genes, including gene clusters encoding for olfactory receptors, genes involved in DNA repair such as MLH1 gene (mapped to 3p21.3), and more than 500 disease loci have been mapped to chromosome 3.</P>
+
+             <P>Many loci are involved in multiple human cancers such as FHIT gene (mapped to 3p14.2), that contains  the fragile site locus FRA3B, involved in half of all oesophageal, stomach and colon carcinomas.</P>
+
+             <P>Other medically relevant such as CCR5 gene (mapped to 3p21.31) that encodes for chemokine receptors and the defective alleles are associated with HIV resistance.</P> 
+
+         <h2>About our web</h2>
+            <p>The knowledge about chromosome 3 provides a rich resource for understanding the molecular basis of human variation and disease.</p>
+      </section> <!-- end section info1 -->
+
+      <section class='info2'>
+           <p>The goal of our web is to provide some online bioinformatics tools to access chromosome 3 sequence and get some functional information, and includes:</p>
+               <ul>
+                   <li><p>Search the database to find an entry based on gene identifier, protein product names, Genbank accession, or chromosomal location.
+                   <li><p>View a summary list of all the gene identifiers, protein product names, Genbank accession and chromosomal location.</p>
+                      <form action="http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/dm002/summary2.pl">
+                          <input type="image" src="Get_started_button.jpg" width="90" height="30" alt="text">
+                      </form></li>
+                   <li><p>View the following information for a particular entry: the complete DNA sequence with the coding regions highlighted, the amino acid sequence displayed with the coding DNA sequence, codon usage frequencies within the coding region  as well as the overall codon usage information for all sequences in the database and identify sticky-end restriction enzymes in the genomic DNA.</p>
+                      <form action="detail.html">
+                         <input type="image" src="Get_started_button.jpg" width="90" height="30" alt="text">
+                     </form></li>
+               </ul>
+       </section> <!-- end section info 2 -->
+
+
+    </div> <!-- end main-content div  -->
+</div> <!-- end content div  -->
+
+
+
+
+
+
+<!--   ========= START SIDEBAR =========  -->
+
+
+<div class="sidebar">
+      <div class="main-sidebar">
+          <h3>Chromosome 3 Ideogram</h3>
+           <div class="Ch3-image-sidebar">
+                 <img src="Chromosome_3.svg" alt="text"/>           
+           </div>  <!-- end Ch3-image div  -->   
+               <p>The banding pattern describe the location of genes in the chromosome 3.</p>
+          
+            <h3>Additional information</h3>               
+               <div class="links">
+                    <ul>
+                       <li><a href="http://www.ncbi.nlm.nih.gov/pubmed" class="more">Pubmed</a></li>
+                       <li><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?org=human&&amp;maps=ideogr,morbid,pheno&&amp;zoom=100&&amp;chr=3" class="more">Map Viewer</a></li>
+                       <li><a href="http://ghr.nlm.nih.gov/chromosome/3" class="more">Genetics Home Reference</a></li>
+                   </ul>
+              </div> <!-- end links div  -->
+           
+      
+          </div> <!-- end main -sidebar div  -->
+</div>  <!-- end sidebar div  -->
+
+</div>  <!-- end page-container div  -->
+
+<!--   ========= START FOOTER =========  -->
+
+<footer>
+    <div class='footer'>
+
+        <p class='footnote'><small>MSc/MRes Bioinformatics with Systems Biology 2013/2014: Biocomputing II</small></p>
+
+     </div> <!-- end footer div -->
+</footer> <!-- end footer  -->
+
+</div> <!-- end page div -->
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!--  ==== DETAIL PAGE ====  -->
+
+<head> <!-- === start head === -->
+    <meta charset="utf-8" />
+    <title>Detail page</title>
+
+<link rel="stylesheet"
+ href="style.css" />
+<!-- HTML shiv JavaScript to get styling of new HTML elements in internet explorer prior version 9-->
+<!--[if lt IE 9]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type='text/css'>
+<!--
+-->
+</style>
+
+</head> <!-- end head  -->
+
+
+<body>
+<div class='page'>
+
+<!--   =========   START HEADER    =========  -->
+<header>
+<div class='header'>
+
+     <div class='logo'>
+          <img src="DNA.png" width="98" height="114" alt="text"/>
+     </div> <!-- end title div  -->
+
+     <div class='title'>
+          <h1><small>CHROMOSOME 3</small></h1>
+     </div> <!-- end title div  -->
+
+
+     <div class='navbox'> <!-- navbar and search box    -->
+     <!-- Search box      -->
+       <div class='searchbox'>
+            <form action='http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/dm002/searchYoli.pl'  method="post">
+
+             <select name = "searchBy">
+                  <option  value="gid">Gene Id</option>
+                  <option  value="protein">Protein</option>
+                  <option  value="accession">Accession Number</option>
+                  <option  value="chromosome_loc">Chromosome Location</option>
+             </select>
+
+             <input name="input" type="text" />
+             <input type="submit" value="search"/>
+           </form>
+        </div> <!-- end searchbox div  -->
+
+       <!-- ==== Navigation bar ==== -->
+       <div class='navbar'>
+
+          <ul>
+            <li><a href='http://student.cryst.bbk.ac.uk/~dm002/homepage.html'>Home</a></li>
+            <li><a href='http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/pm001/summary2.pl'>Summary</a></li>
+            <li class='active'><a href='http://student.cryst.bbk.ac.uk/~dm002/detail.html'>Detail</a></li>
+          </ul>
+
+       </div>   <!-- end navbar div  -->
+     </div>   <!-- end navbox div  -->
+
+  </div> <!-- end header div  -->
+</header> <!-- end header  -->
+
+
+
+<!--   ========= START CONTENT DETAIL PAGE  =========  -->
+
+
+<div class='contentDetail'>
+
+ <!-- DNA sequence with coding regions highlighted -->
+  <section class='accession'>
+     
+     <form action='http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/dm002/getDNA.pl'  method='post'>
+        
+        <fieldset>
+        <legend><b>DNA Sequence</b></legend>
+             <P><small>Enter the accession number and press 'Submit' to find the complete sequence of DNA.</small></P>
+             <p><b>Accession Number:</b>            
+             <input name="accession"/> 
+	    
+             <input type="submit" value="Submit" />&nbsp;&nbsp;
+             <input type="reset" value="Clear" />   
+             </p>
+
+         </fieldset>      
+      </form>  <!-- end form -->
+  </section> <!-- end section accession -->
+
+
+
+ 
+ <!-- Restriction Enzymes Cutting Sites Section -->
+   <section class='restriction'>
+    
+       <form action='http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/dm002/restriction.pl'  method='post'>
+        
+           <fieldset class='chooseEnzyme'>	
+           <legend><b>Restriction Enzyme Cutting Sites</b></legend>
+               <P><small>Enter the accession number, choose a restriction enzyme and press 'Submit' to find sticky-end restriction enzyme sites.</small></P>
+               <p><b>Restriction enzyme:</b>
+                  <select name="enzyme">
+                    <option value="EcoRI">EcoRI</option>
+                    <option value="BamHI">BamHI</option>
+                    <option value="BsuMI">BsuMI</option>
+           
+                 </select>
+	       </p>
+	       <p><b>Accession Number:</b>            
+                   <input name="accession"/>
+	                         
+                <input type="submit" value="Submit" />&nbsp;&nbsp;
+                <input type="reset" value="Clear" />
+                </p>
+
+             </fieldset>  <!-- end fieldset chooseEnzyme -->  
+         </form>
+     </section>  <!-- end section restriction -->
+
+
+<!-- ==== Amino Acid Sequence ==== -->
+  <section class='aa'>
+     
+     <form action='http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/dm002/aaYoli.pl'  method='post'>
+        
+        <fieldset>
+        <legend><b>Amino Acid Sequence</b></legend>
+             <P><small>Enter the accession number and press 'Submit' to find the amino acid sequence with the coding DNA sequence.</small></P>
+             <p><b>Accession Number:</b>            
+             <input name="accession"/> 
+	    
+             <input type="submit" value="Submit" />&nbsp;&nbsp;
+             <input type="reset" value="Clear" />   
+             </p>
+
+         </fieldset>      
+      </form>  <!-- end form -->
+  </section> <!-- end section accession -->
+
+
+ 
+ <!-- ==== Gene Codons and Codon Frequency ==== -->
+  <section class='codon'>
+     
+     <form action='http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/dm002/codonYoli.pl'  method='post'>
+        
+        <fieldset>
+        <legend><b>Codon Usage</b></legend>
+             <P><small>Enter the accession number and press 'Submit' to find the codon frequency.</small></P>
+             <p><b>Accession Number:</b>                         
+             <input name="accession"/> 
+	    
+             <input type="submit" value="Submit" />&nbsp;&nbsp;
+             <input type="reset" value="Clear" />   
+             </p>
+
+         </fieldset>      
+      </form>  <!-- end form -->
+  </section> <!-- end section accession -->
+
+
+
+</div>  <!-- end contentDetail div -->
+  
+  
+
+
+
+   
+<!--   ========= START FOOTER =========  -->
+
+<footer>
+   <div class='footer'>
+
+        <p class='footnote'><small>MSc/MRes Bioinformatics with Systems Biology 2013/2014: Biocomputing II</small></p>
+
+   </div> <!-- end footer div -->
+</footer> <!-- end footer  -->
+
+</div> <!-- end page div -->
+
+</body>
+</html>
